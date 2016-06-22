@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+body{
+    font-family: 'Rosario', Helvetica, Arial;
+    font-size: 16px;
+    color: black;
+    text-align: justify;
+    line-height: 1.5rem; 
+    margin: 0px; 
+    padding: 0px;
+    border: 0px;
+}
+
+
+h1,h2,h3{
+    font-family: Bodomi, "Times New Roman";
+    text-align: left;
+    color: #7ea218;
+    margin: 0px;
+    padding: 0.2rem 0px;
+    /*para obligar al texto a irse hacia abajo*/
+    clear: both;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+h2{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: normal;
+    
+}
+
+h3{
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+ul li{
+    list-style-type: square;
+}
+
+ol li{
+    list-style-type: decimal;
+}
+
+ul, ol{
+/*    margin: 1rem 0px 1rem 2rem;*/
+margin: 1rem 0px 1rem 2rem;
+}
+
+p:first-of-type {
+    margin-top: 0px;
+}
+p {
+    margin: 1rem 0px;
+}
+p:first-of-type {
+    margin-top: 0px;
+}
+
+header {
+    background-color: #7ea218;
+    color: #dfecb6;
+    height: 5rem;
+}
+header h1{
+    color: #dfecb6;
+    padding: 1.5rem;
+    margin: 0px;
+}
+
+/*dividir la pantalla*/
+aside, section {
+    float: left;
+/*    padding: 1%;*/
+}
+
+section {
+    width: 64%;
+    padding: 2%;
+}
+aside{
+    width: 28%;
+    padding: 2%;
+    background-color: #dfecb6;
+}
+
+/*poner las comillas*/
+em:lang(gl){
+    font-style: italic;
+}
+em:lang(gl), .comillas{
+    quotes: "\201c" "\201d";
+}
+em:lang(gl):before, .comillas:before{ 
+    content: open-quote;
+}
+em:lang(gl):after,  .comillas:after{ 
+    content: close-quote;
+}
+
+/*para citas de libros por ejemplo, o numeros en formulas matematicas*/
+cite, sup{
+    font-size: 0.8rem;
+    vertical-align: super;
+    padding: 0px 0.2rem; 
+}
+/*para formulas matematicas*/
+sub {
+    font-size: 0.8rem;
+    vertical-align: sub;
+    padding: 0 0.2rem;
+}
+
+/*para imagenes*/
+figcaption {
+    text-align: center;
+}
+figure {
+    width: 60%;
+    margin: auto;
+}
+
+.float-left{
+    width: auto;
+    float: left;
+    margin: 0px 2rem 0px 0px;	
+}
+
+/*pie de foto de la tabla*/
+caption {
+    caption-side: bottom;
+    text-align: center; 
+    margin-top: 0.5rem;
+}
+
+table {
+    margin: auto;
+}
+
+td, th {
+    vertical-align: middle;
+    padding: 0.125rem 0.8rem;
+    font-weight: normal; 
+    border-style: solid;
+    border-width: 0.0625rem;
+}
+th {
+    color: #fff;
+    background-color: #404040;
+    text-align: center;
+}
+td {
+    border-color: #404040;
+}
+
+thead th { 
+    border-color: #404040 #ffffff;
+}
+thead th:first-child{
+    border-left-color: #404040;
+}
+thead th:last-child{
+    border-right-color: #404040;
+}
+figure.video{
+    margin: auto;
+    width: 70%;
+}
+
+/*codigo informatico*/
+pre{
+    font-family: monospace;
+    font-size: 0.85rem;
+    line-height: 0.8rem;
+    color: steelblue;
+    border:1px solid black;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: lightgray;
+}
+
+address {
+    font-style: italic;
+}
+blockquote {
+    /*el primero hace referencia al margen vertical y el segundo al horizontal*/
+    margin: 1rem 2rem;
+}
+
+fieldset{
+    border:1px solid black;
+    padding: 1rem;
+}
+
+
